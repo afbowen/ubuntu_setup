@@ -11,7 +11,7 @@ sudo apt update && sudo apt upgrade -y
 
 printf "\n"
 echo "[2/9] Installing APT packages..."
-sudo apt install -y git curl tree python3-pip gnome-tweaks gnome-shell-extensions gnome-shell-extension-prefs gnome-shell-extension-manager stow kate
+sudo apt install -y git curl tree python3-pip gnome-tweaks gnome-shell-extensions gnome-shell-extension-prefs gnome-shell-extension-manager stow kate numlockx
 
 
 printf "\n"
