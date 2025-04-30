@@ -140,6 +140,10 @@ export tesp="-b $esp32c3 -p $port"
 export tesp1="-b $esp32c3 -p $port1"
 export tesp2="-b $esp32c3 -p $port2"
 
+export home_personal="192.168.99.196"
+export home_work="192.168.99.219"
+export share_dir="~/shared"
+
 
 export PATH="/home/$USER/.local/bin:$PATH"
 export PATH="$PATH:/opt/microchip/xc8/v2.46/bin"

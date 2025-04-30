@@ -8,9 +8,17 @@ function arduino { nohup arduino & }
 alias edit_aliases="kate ~/.bash_aliases"
 alias edit_rc="kate ~/.bashrc"
 alias acli="arduino-cli"
-alias putty="putty -load esp"
-alias putty1="putty -load esp1"
-alias putty2="putty -load esp2"
+#alias putty="putty -load esp"
+#alias putty1="putty -load esp1"
+#alias putty2="putty -load esp2"
+alias putty="minicom -D /dev/ttyUSB0 -b 115200"
+alias putty1="minicom -D /dev/ttyUSB1 -b 115200"
+alias putty2="minicom -D /dev/ttyUSB2 -b 115200"
+
+alias espidf="source ~/esp/esp-idf/export.sh"
+alias iflash="idf.py -p /dev/ttyUSB0 flash monitor"
+alias iflash1="idf.py -p /dev/ttyUSB1 flash monitor"
+
 alias puttym="putty -load mega"
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
 alias idf='idf.py'
@@ -30,6 +38,9 @@ alias umsd='umboot -f; umrootfs -f'
 alias rpyc='rm -r __pycache__; rm -r */__pycache__; rm -r */*/__pycache__'
 alias cvenv='source ~/venv/cvenv/bin/activate'
 
+alias scphp='scp $1 $home_personal:$share_dir'
+alias scphw='scp $1 $home_personal:$share_dir'
+
 espmon() {
     if [ -z "$1" ]; then
         idf.py -p "$port" monitor
@@ -40,6 +51,9 @@ espmon() {
 
 
 alias app2='bluetoothctl connect 68:CA:C4:DB:C5:E9'
+alias dapp2='bluetoothctl disconnect 68:CA:C4:DB:C5:E9'
+alias cabana='bluetoothctl connect 94:B3:F7:9B:7B:59'
+alias dcabana='bluetoothctl disconnect 94:B3:F7:9B:7B:59'
 
 function cpl {
     acli compile -b $mega "$1"
