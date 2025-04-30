@@ -43,7 +43,9 @@ echo "[4/11] Setting up dotfiles..."
 cd dotfiles
 DOTFILES_DIR="$SCRIPT_DIR/dotfiles"
 TARGET_DIR="$HOME"
-stow -v -d "$DOTFILES_DIR" -t "$TARGET_DIR" bash git kate
+stow -v -d "$DOTFILES_DIR" -t "$TARGET_DIR" bash git
+ln -sf ~/git/ubuntu_setup/dotfiles/kate/.config/katerc ~/.config/katerc
+
 source ~/.bashrc
 cd ..
 
