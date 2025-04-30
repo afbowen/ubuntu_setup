@@ -1,0 +1,8 @@
+[TESTED WORKING] create_gui_venv.sh
+[TESTED UNKNOWN]force_numlock.sh
+[TESTED WORKING]gui_requirements.txt
+[TESTED UNKNOWN]install_esp_arduino.sh
+[TESTED UNKNOWN]install_esp_idf.sh
+[TESTED WORKING]install_python_venv_3_7.sh
+[TESTED UNKNOWN]set_deep_suspend.sh
+[TESTED UNKNOWN]setup_legacy_screenshot.sh

@@ -1,0 +1,4 @@
+PyQt5==5.15.10
+autobahn==23.1.2
+Twisted==23.8.0
+pyserial==3.5
